@@ -1,24 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const StakeholderManager = () => {
-  // State for stakeholders
-  const [stakeholders, setStakeholders] = useState([
-    {
-      id: 'consumers',
-      title: 'Content Consumers',
-      features: [
-        { id: 'f1', title: 'Real-time fact verification', description: 'Verify facts while watching' },
-        { id: 'f2', title: 'Enhanced accuracy', description: 'Access verified information' }
-      ]
-    }
-  ]);
+  // Initialize state from localStorage if available
+  const [stakeholders, setStakeholders] = useState(() => {
+    const saved = localStorage.getItem('stakeholders');
+    return saved ? JSON.parse(saved) : [
+      {
+        id: 'consumers',
+        title: 'Content Consumers',
+        features: [
+          { id: 'f1', title: 'Real-time fact verification', description: 'Verify facts while watching' },
+          { id: 'f2', title: 'Enhanced accuracy', description: 'Access verified information' }
+        ]
+      }
+    ];
+  });
 
-  // State for new entries
+  // Save to localStorage whenever stakeholders change
+  useEffect(() => {
+    localStorage.setItem('stakeholders', JSON.stringify(stakeholders));
+  }, [stakeholders]);
+
   const [newStakeholder, setNewStakeholder] = useState({ title: '' });
-  const [selectedStakeholder, setSelectedStakeholder] = useState(null);
   const [newFeature, setNewFeature] = useState({ title: '', description: '' });
 
-  // CRUD Operations
+  // Rest of your existing code...
   const addStakeholder = () => {
     if (!newStakeholder.title) return;
     
