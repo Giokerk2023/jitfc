@@ -1,0 +1,403 @@
+Codebase Analysis Report - 20241024_1346
+================================================================================
+
+Project Information
+--------------------------------------------------
+name: datamatchhub
+type: node
+dependencies: {'@tailwindcss/forms': '^0.5.9', 'clsx': '^2.1.1', 'date-fns': '^4.1.0', 'immer': '^10.1.1', 'lucide-react': '^0.453.0', 'react': '^18.3.1', 'react-dom': '^18.3.1', 'react-router-dom': '^6.27.0', 'tailwind-merge': '^2.5.4', 'zustand': '^5.0.0'}
+dev_dependencies: {'@eslint/js': '^9.13.0', '@types/react': '^18.3.11', '@types/react-dom': '^18.3.1', '@vitejs/plugin-react': '^4.3.3', 'autoprefixer': '^10.4.20', 'eslint': '^9.13.0', 'eslint-plugin-react': '^7.37.1', 'eslint-plugin-react-hooks': '^5.0.0', 'eslint-plugin-react-refresh': '^0.4.13', 'globals': '^15.11.0', 'postcss': '^8.4.47', 'tailwindcss': '^3.4.14', 'vite': '^5.4.9'}
+entry_points: ['index.js']
+config_files: ['package-lock.json', 'package.json', 'netlify.toml']
+
+Statistics
+--------------------------------------------------
+total_files: 39
+languages: {'javascript': 38, 'python': 1}
+total_size: 91765
+total_functions: 85
+total_classes: 8
+files_by_type: {'.js': 18, '.py': 1, '.jsx': 20}
+
+Recent Changes
+--------------------------------------------------
+
+Dependency Graph
+--------------------------------------------------
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/tailwind.config.js:
+  - tailwindcss
+  - @tailwindcss/forms
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/vite.config.js:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/generate_report.py:
+  - os
+  - json
+  - re
+  - datetime
+  - datetime
+  - hashlib
+  - typing
+  - Dict
+  - difflib
+  - yaml
+  - glob
+  - dataclasses
+  - dataclass
+  - subprocess
+  - pathlib
+  - Path
+  - file
+  - file
+  - ast
+  - paths
+  - source_dir
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/eslint.config.js:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/postcss.config.js:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/main.jsx:
+  - ./index.css
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/App.jsx:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/setupTests.js:
+  - @testing-library/jest-dom
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/core/department.js:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/core/routes.js:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/core/email.js:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/core/__tests__/department.test.js:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/tests/integration/department-flow.test.jsx:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/tests/visual/basic.test.js:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/tests/visual/visual.test.jsx:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/tests/performance/department-analysis.test.js:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/tests/helpers/setup.js:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/stores/departmentStore.js:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/stores/__tests__/departmentStore.test.js:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/utils/performance.js:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/utils/departmentUtils.js:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/utils/api.js:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/utils/__tests__/validation.test.js:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/DepartmentManager.jsx:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/Section.jsx:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/layout/MainLayout.jsx:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/department/StatDisplay.jsx:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/department/ProfileCard.jsx:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/department/DepartmentCard.jsx:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/Header.jsx:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/LoadingSpinner.jsx:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/Footer.jsx:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/ErrorBoundary.jsx:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/Navigation.jsx:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/__tests__/LoadingSpinner.test.jsx:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/pages/Register.jsx:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/pages/Home.jsx:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/pages/department/Profile.jsx:
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/pages/department/DepartmentHome.jsx:
+
+File Details
+--------------------------------------------------
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/tailwind.config.js:
+  Language: javascript
+  Size: 816 bytes
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/vite.config.js:
+  Language: javascript
+  Size: 1017 bytes
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/generate_report.py:
+  Language: python
+  Size: 22947 bytes
+  Functions:
+    - __init__
+    - _load_config
+    - analyze_project
+    - generate_report
+    - _detect_project_type
+    - _scan_files
+    - _analyze_file
+    - _analyze_changes
+    - _write_human_readable_report
+    - _calculate_file_hash
+    - _should_analyze_file
+    - _extract_patterns
+    - _extract_dependencies
+    - _extract_exports
+    - _extract_functions
+    - _extract_classes
+    - _extract_doc_strings
+    - _generate_statistics
+    - _generate_dependency_graph
+    - _load_project_context
+    - _create_generic_context
+    - _find_config_files
+    - _analyze_dependencies
+    - build_dep_tree
+    - _resolve_import_path
+    - _update_history
+    - analyze_complexity
+    - _calculate_cyclomatic_complexity
+    - _calculate_cognitive_complexity
+    - _calculate_max_nesting
+    - _calculate_comment_ratio
+  Classes:
+    - class
+    - class
+    - UniversalCodebaseAnalyzer
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/eslint.config.js:
+  Language: javascript
+  Size: 1003 bytes
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/postcss.config.js:
+  Language: javascript
+  Size: 80 bytes
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/main.jsx:
+  Language: javascript
+  Size: 232 bytes
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/App.jsx:
+  Language: javascript
+  Size: 1426 bytes
+  Functions:
+    - App
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/setupTests.js:
+  Language: javascript
+  Size: 210 bytes
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/core/department.js:
+  Language: javascript
+  Size: 9859 bytes
+  Functions:
+    - extractUserFeatures
+    - extractProfileFeatures
+    - extractBehavioralFeatures
+    - extractContentFeatures
+    - extractInteractionFeatures
+    - calculateSimilarities
+    - findBestMatch
+    - extractCommonFeatures
+    - deriveMetrics
+    - generateDepartmentId
+    - generateDepartmentName
+    - generatePath
+    - generateEmailPrefix
+    - generateValidations
+  Classes:
+    - DepartmentAnalyzer
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/core/routes.js:
+  Language: javascript
+  Size: 3804 bytes
+  Functions:
+    - generateDepartmentRoutes
+    - generateBreadcrumbs
+    - validateRoute
+    - generateDynamicRoutes
+    - generateRoutingConfig
+    - generateNetlifyConfig
+    - parseRouteParams
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/core/email.js:
+  Language: javascript
+  Size: 3197 bytes
+  Functions:
+    - generateEmailFormats
+    - validateEmail
+    - generateEmailFormats
+    - validateEmail
+    - parseEmailFormat
+    - extractUsernameFromEmail
+    - extractDepartmentFromEmail
+    - generateEmailConfig
+    - validateEmailConfiguration
+    - generateEmailAliases
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/core/__tests__/department.test.js:
+  Language: javascript
+  Size: 2433 bytes
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/tests/integration/department-flow.test.jsx:
+  Language: javascript
+  Size: 2566 bytes
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/tests/visual/basic.test.js:
+  Language: javascript
+  Size: 412 bytes
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/tests/visual/visual.test.jsx:
+  Language: javascript
+  Size: 1576 bytes
+  Functions:
+    - waitForPage
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/tests/performance/department-analysis.test.js:
+  Language: javascript
+  Size: 937 bytes
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/tests/helpers/setup.js:
+  Language: javascript
+  Size: 1457 bytes
+  Functions:
+    - isServerRunning
+    - waitForServer
+    - startDevServer
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/stores/departmentStore.js:
+  Language: javascript
+  Size: 4739 bytes
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/stores/__tests__/departmentStore.test.js:
+  Language: javascript
+  Size: 1468 bytes
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/utils/performance.js:
+  Language: javascript
+  Size: 1044 bytes
+  Classes:
+    - PerformanceMonitor
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/utils/departmentUtils.js:
+  Language: javascript
+  Size: 1114 bytes
+  Classes:
+    - DepartmentAnalyzer
+    - DepartmentValidator
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/utils/api.js:
+  Language: javascript
+  Size: 3340 bytes
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/utils/__tests__/validation.test.js:
+  Language: javascript
+  Size: 1579 bytes
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/DepartmentManager.jsx:
+  Language: javascript
+  Size: 1186 bytes
+  Functions:
+    - DepartmentManager
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/Section.jsx:
+  Language: javascript
+  Size: 799 bytes
+  Functions:
+    - Section
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/layout/MainLayout.jsx:
+  Language: javascript
+  Size: 754 bytes
+  Functions:
+    - MainLayout
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/department/StatDisplay.jsx:
+  Language: javascript
+  Size: 1866 bytes
+  Functions:
+    - StatDisplay
+    - formatValue
+    - calculateChange
+    - change
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/department/ProfileCard.jsx:
+  Language: javascript
+  Size: 856 bytes
+  Functions:
+    - ProfileCard
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/department/DepartmentCard.jsx:
+  Language: javascript
+  Size: 0 bytes
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/Header.jsx:
+  Language: javascript
+  Size: 0 bytes
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/LoadingSpinner.jsx:
+  Language: javascript
+  Size: 585 bytes
+  Functions:
+    - LoadingSpinner
+    - PageLoader
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/Footer.jsx:
+  Language: javascript
+  Size: 0 bytes
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/ErrorBoundary.jsx:
+  Language: javascript
+  Size: 2161 bytes
+  Classes:
+    - ErrorBoundary
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/Navigation.jsx:
+  Language: javascript
+  Size: 0 bytes
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/__tests__/LoadingSpinner.test.jsx:
+  Language: javascript
+  Size: 1081 bytes
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/pages/Register.jsx:
+  Language: javascript
+  Size: 9397 bytes
+  Functions:
+    - Register
+    - handleInputChange
+    - validateStep
+    - handleNext
+    - handleBack
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/pages/Home.jsx:
+  Language: javascript
+  Size: 3037 bytes
+  Functions:
+    - Home
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/pages/department/Profile.jsx:
+  Language: javascript
+  Size: 1168 bytes
+  Functions:
+    - Profile
+
+/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/pages/department/DepartmentHome.jsx:
+  Language: javascript
+  Size: 1619 bytes
+  Functions:
+    - DepartmentHome

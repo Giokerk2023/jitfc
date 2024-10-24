@@ -1,0 +1,24 @@
+[[redirects]]
+  from = "/role/*"
+  to = "/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/b/*"
+  to = "/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/i/*"
+  to = "/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/brands/*"
+  to = "/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

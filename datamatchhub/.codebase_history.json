@@ -1,0 +1,725 @@
+{
+  "analyses": [
+    {
+      "timestamp": "2024-10-24T13:46:14.428330",
+      "files": {
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/tailwind.config.js": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/tailwind.config.js",
+          "language": "javascript",
+          "size": 816,
+          "last_modified": 1729768108.076568,
+          "hash": "6bd1a82988767cdbed191f71a28650da",
+          "dependencies": [
+            "tailwindcss",
+            "@tailwindcss/forms"
+          ],
+          "exports": [],
+          "doc_strings": [
+            "@type {import('tailwindcss').Config}"
+          ],
+          "functions": [],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/vite.config.js": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/vite.config.js",
+          "language": "javascript",
+          "size": 1017,
+          "last_modified": 1729768108.0774531,
+          "hash": "59572a1e840159145cea55d1b46f40bb",
+          "dependencies": [],
+          "exports": [],
+          "doc_strings": [],
+          "functions": [],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/generate_report.py": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/generate_report.py",
+          "language": "python",
+          "size": 22947,
+          "last_modified": 1729696424.3247778,
+          "hash": "cd536e08db2d15d83db0a6c832f484d0",
+          "dependencies": [
+            "os",
+            "json",
+            "re",
+            "datetime",
+            "datetime",
+            "hashlib",
+            "typing",
+            "Dict",
+            "difflib",
+            "yaml",
+            "glob",
+            "dataclasses",
+            "dataclass",
+            "subprocess",
+            "pathlib",
+            "Path",
+            "file",
+            "file",
+            "ast",
+            "paths",
+            "source_dir"
+          ],
+          "exports": [],
+          "doc_strings": [
+            "Metadata for tracked files",
+            "Project-wide context information",
+            "Analyzes any codebase and maintains development context",
+            "Initialize with optional custom configuration",
+            "Load configuration from file or use defaults",
+            "Analyze entire project and generate context",
+            "Generate comprehensive report of the codebase",
+            "Detect project type and load relevant configuration",
+            "Scan and analyze all relevant files in the project",
+            "Analyze individual file and extract metadata",
+            "Analyze changes since last analysis",
+            "Write report in human-readable format",
+            "Calculate hash of file content",
+            "Determine if file should be analyzed",
+            "Extract patterns from file content based on language",
+            "Extract documentation strings based on language",
+            "(.*?)",
+            "Generate codebase statistics",
+            "Generate dependency graph for the project",
+            "Load project context based on project type and configuration file",
+            "Create a generic project context when type cannot be determined",
+            "Find all configuration files in the project",
+            "Analyze project dependencies and their relationships",
+            "Resolve relative import paths to absolute paths",
+            "Update the project history with current analysis",
+            "Analyze code complexity metrics for each file",
+            "Calculate cyclomatic complexity (placeholder)",
+            "Calculate cognitive complexity (placeholder)",
+            "Calculate maximum nesting depth (placeholder)",
+            "Calculate comment ratio (placeholder)"
+          ],
+          "functions": [
+            "__init__",
+            "_load_config",
+            "analyze_project",
+            "generate_report",
+            "_detect_project_type",
+            "_scan_files",
+            "_analyze_file",
+            "_analyze_changes",
+            "_write_human_readable_report",
+            "_calculate_file_hash",
+            "_should_analyze_file",
+            "_extract_patterns",
+            "_extract_dependencies",
+            "_extract_exports",
+            "_extract_functions",
+            "_extract_classes",
+            "_extract_doc_strings",
+            "_generate_statistics",
+            "_generate_dependency_graph",
+            "_load_project_context",
+            "_create_generic_context",
+            "_find_config_files",
+            "_analyze_dependencies",
+            "build_dep_tree",
+            "_resolve_import_path",
+            "_update_history",
+            "analyze_complexity",
+            "_calculate_cyclomatic_complexity",
+            "_calculate_cognitive_complexity",
+            "_calculate_max_nesting",
+            "_calculate_comment_ratio"
+          ],
+          "classes": [
+            "class",
+            "class",
+            "UniversalCodebaseAnalyzer"
+          ]
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/eslint.config.js": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/eslint.config.js",
+          "language": "javascript",
+          "size": 1003,
+          "last_modified": 1729767689.9387653,
+          "hash": "bfe13b9e25d0af7959d0396aa103d88c",
+          "dependencies": [],
+          "exports": [],
+          "doc_strings": [],
+          "functions": [],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/postcss.config.js": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/postcss.config.js",
+          "language": "javascript",
+          "size": 80,
+          "last_modified": 1729768108.077045,
+          "hash": "ef3ba2a81ba19f8ea5ddf625521e96f0",
+          "dependencies": [],
+          "exports": [],
+          "doc_strings": [],
+          "functions": [],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/main.jsx": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/main.jsx",
+          "language": "javascript",
+          "size": 232,
+          "last_modified": 1729768093.8658504,
+          "hash": "a6617d708b5bd2c40dd8210e49f3ff0d",
+          "dependencies": [
+            "./index.css"
+          ],
+          "exports": [],
+          "doc_strings": [],
+          "functions": [],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/App.jsx": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/App.jsx",
+          "language": "javascript",
+          "size": 1426,
+          "last_modified": 1729768093.8558517,
+          "hash": "0f4802caa420ffc1cd52f258dc4ae1e1",
+          "dependencies": [],
+          "exports": [],
+          "doc_strings": [],
+          "functions": [
+            "App"
+          ],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/setupTests.js": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/setupTests.js",
+          "language": "javascript",
+          "size": 210,
+          "last_modified": 1729768093.8686464,
+          "hash": "6a2178bf016f0ba080af450a05799adb",
+          "dependencies": [
+            "@testing-library/jest-dom"
+          ],
+          "exports": [],
+          "doc_strings": [],
+          "functions": [],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/core/department.js": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/core/department.js",
+          "language": "javascript",
+          "size": 9859,
+          "last_modified": 1729768093.8638215,
+          "hash": "4ac0ce13762a83b50c88e7a08a2576ec",
+          "dependencies": [],
+          "exports": [
+            "useDepartmentStore",
+            "DepartmentConfig",
+            "RouteConfig",
+            "DepartmentTemplates",
+            "DepartmentAnalyzer",
+            "DepartmentValidator"
+          ],
+          "doc_strings": [
+            "* Core Department Management System\n * Essential functionality for dynamic department handling",
+            "* Utilities for handling AI-driven department management"
+          ],
+          "functions": [
+            "extractUserFeatures",
+            "extractProfileFeatures",
+            "extractBehavioralFeatures",
+            "extractContentFeatures",
+            "extractInteractionFeatures",
+            "calculateSimilarities",
+            "findBestMatch",
+            "extractCommonFeatures",
+            "deriveMetrics",
+            "generateDepartmentId",
+            "generateDepartmentName",
+            "generatePath",
+            "generateEmailPrefix",
+            "generateValidations"
+          ],
+          "classes": [
+            "DepartmentAnalyzer"
+          ]
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/core/routes.js": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/core/routes.js",
+          "language": "javascript",
+          "size": 3804,
+          "last_modified": 1729768093.8643467,
+          "hash": "52df0cfcc30c5029fcb5ea3b8ecffb7c",
+          "dependencies": [],
+          "exports": [
+            "ROUTE_TYPES",
+            "generateDepartmentRoutes",
+            "generateBreadcrumbs",
+            "validateRoute",
+            "generateDynamicRoutes",
+            "generateRoutingConfig",
+            "generateNetlifyConfig",
+            "parseRouteParams"
+          ],
+          "doc_strings": [
+            "* Route utilities for dynamic department and profile routing"
+          ],
+          "functions": [
+            "generateDepartmentRoutes",
+            "generateBreadcrumbs",
+            "validateRoute",
+            "generateDynamicRoutes",
+            "generateRoutingConfig",
+            "generateNetlifyConfig",
+            "parseRouteParams"
+          ],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/core/email.js": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/core/email.js",
+          "language": "javascript",
+          "size": 3197,
+          "last_modified": 1729768093.8648255,
+          "hash": "bd9a8a83ca9cdc37fc8a13ab3c2581f9",
+          "dependencies": [],
+          "exports": [
+            "EMAIL_FORMATS",
+            "generateEmailFormats",
+            "validateEmail",
+            "EMAIL_FORMATS",
+            "generateEmailFormats",
+            "validateEmail",
+            "parseEmailFormat",
+            "extractUsernameFromEmail",
+            "extractDepartmentFromEmail",
+            "generateEmailConfig",
+            "validateEmailConfiguration",
+            "generateEmailAliases"
+          ],
+          "doc_strings": [
+            "* Email format generator and validator for the DataMatchHub platform",
+            "* Email format generator and validator for the DataMatchHub platform"
+          ],
+          "functions": [
+            "generateEmailFormats",
+            "validateEmail",
+            "generateEmailFormats",
+            "validateEmail",
+            "parseEmailFormat",
+            "extractUsernameFromEmail",
+            "extractDepartmentFromEmail",
+            "generateEmailConfig",
+            "validateEmailConfiguration",
+            "generateEmailAliases"
+          ],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/core/__tests__/department.test.js": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/core/__tests__/department.test.js",
+          "language": "javascript",
+          "size": 2433,
+          "last_modified": 1729768093.863254,
+          "hash": "895a5c7b2980ee0dc2fdf71579d0bff3",
+          "dependencies": [],
+          "exports": [],
+          "doc_strings": [],
+          "functions": [],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/tests/integration/department-flow.test.jsx": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/tests/integration/department-flow.test.jsx",
+          "language": "javascript",
+          "size": 2566,
+          "last_modified": 1729768093.8725724,
+          "hash": "53c2a2a2dfc87804f21f2d18ba3ef89e",
+          "dependencies": [],
+          "exports": [],
+          "doc_strings": [],
+          "functions": [],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/tests/visual/basic.test.js": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/tests/visual/basic.test.js",
+          "language": "javascript",
+          "size": 412,
+          "last_modified": 1729768093.8741152,
+          "hash": "43468965d16adaa0f3812d0a5fcee0fd",
+          "dependencies": [],
+          "exports": [],
+          "doc_strings": [],
+          "functions": [],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/tests/visual/visual.test.jsx": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/tests/visual/visual.test.jsx",
+          "language": "javascript",
+          "size": 1576,
+          "last_modified": 1729768093.8744273,
+          "hash": "533aeabd741d65bdcda24fd91cf8eb4d",
+          "dependencies": [],
+          "exports": [],
+          "doc_strings": [],
+          "functions": [
+            "waitForPage"
+          ],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/tests/performance/department-analysis.test.js": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/tests/performance/department-analysis.test.js",
+          "language": "javascript",
+          "size": 937,
+          "last_modified": 1729768093.8767352,
+          "hash": "f6117baa0325f4ca7762d49fb0404365",
+          "dependencies": [],
+          "exports": [],
+          "doc_strings": [],
+          "functions": [],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/tests/helpers/setup.js": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/tests/helpers/setup.js",
+          "language": "javascript",
+          "size": 1457,
+          "last_modified": 1729768093.8773344,
+          "hash": "493d3a072b9e0605a54462b458cc7773",
+          "dependencies": [],
+          "exports": [],
+          "doc_strings": [],
+          "functions": [
+            "isServerRunning",
+            "waitForServer",
+            "startDevServer"
+          ],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/stores/departmentStore.js": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/stores/departmentStore.js",
+          "language": "javascript",
+          "size": 4739,
+          "last_modified": 1729768093.869932,
+          "hash": "7dd3269b1cdb844f95f3f4341e981639",
+          "dependencies": [],
+          "exports": [],
+          "doc_strings": [],
+          "functions": [],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/stores/__tests__/departmentStore.test.js": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/stores/__tests__/departmentStore.test.js",
+          "language": "javascript",
+          "size": 1468,
+          "last_modified": 1729768093.871098,
+          "hash": "29d9ee966dcdfeca78ab4931f14afe77",
+          "dependencies": [],
+          "exports": [],
+          "doc_strings": [],
+          "functions": [],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/utils/performance.js": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/utils/performance.js",
+          "language": "javascript",
+          "size": 1044,
+          "last_modified": 1729768093.877759,
+          "hash": "56811b28dc2ffbd4fd055bba976454b8",
+          "dependencies": [],
+          "exports": [
+            "PerformanceMonitor",
+            "measureDepartmentOperations"
+          ],
+          "doc_strings": [],
+          "functions": [],
+          "classes": [
+            "PerformanceMonitor"
+          ]
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/utils/departmentUtils.js": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/utils/departmentUtils.js",
+          "language": "javascript",
+          "size": 1114,
+          "last_modified": 1729768093.8791406,
+          "hash": "1a70d02783fbdce0f299287595f07565",
+          "dependencies": [],
+          "exports": [
+            "DepartmentAnalyzer",
+            "DepartmentValidator"
+          ],
+          "doc_strings": [],
+          "functions": [],
+          "classes": [
+            "DepartmentAnalyzer",
+            "DepartmentValidator"
+          ]
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/utils/api.js": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/utils/api.js",
+          "language": "javascript",
+          "size": 3340,
+          "last_modified": 1729768093.8796115,
+          "hash": "6ae6904a13a76e2522bb78a951ffffa1",
+          "dependencies": [],
+          "exports": [
+            "handleEmailGeneration",
+            "handleRouteValidation",
+            "handleRoutingConfigGeneration",
+            "handleDepartmentCreation",
+            "handleUserRegistration"
+          ],
+          "doc_strings": [
+            "* API handlers for email and routing functionality"
+          ],
+          "functions": [],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/utils/__tests__/validation.test.js": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/utils/__tests__/validation.test.js",
+          "language": "javascript",
+          "size": 1579,
+          "last_modified": 1729768093.8785346,
+          "hash": "5a37a804b8e74df5cec8bb4648bfb8ef",
+          "dependencies": [],
+          "exports": [],
+          "doc_strings": [],
+          "functions": [],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/DepartmentManager.jsx": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/DepartmentManager.jsx",
+          "language": "javascript",
+          "size": 1186,
+          "last_modified": 1729768093.857776,
+          "hash": "7754cbf973eafefe8c2a763af677bf4c",
+          "dependencies": [],
+          "exports": [],
+          "doc_strings": [],
+          "functions": [
+            "DepartmentManager"
+          ],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/Section.jsx": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/Section.jsx",
+          "language": "javascript",
+          "size": 799,
+          "last_modified": 1729768093.8626425,
+          "hash": "c30478242781db06f2c46aeda8fed949",
+          "dependencies": [],
+          "exports": [],
+          "doc_strings": [],
+          "functions": [
+            "Section"
+          ],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/layout/MainLayout.jsx": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/layout/MainLayout.jsx",
+          "language": "javascript",
+          "size": 754,
+          "last_modified": 1729768093.8573778,
+          "hash": "fdfbe6b91ac8f3536b2c868ac1102a88",
+          "dependencies": [],
+          "exports": [
+            "MainLayout"
+          ],
+          "doc_strings": [],
+          "functions": [
+            "MainLayout"
+          ],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/department/StatDisplay.jsx": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/department/StatDisplay.jsx",
+          "language": "javascript",
+          "size": 1866,
+          "last_modified": 1729768093.858507,
+          "hash": "0953383383a9074c8a7c5d894af44134",
+          "dependencies": [],
+          "exports": [
+            "StatDisplay"
+          ],
+          "doc_strings": [],
+          "functions": [
+            "StatDisplay",
+            "formatValue",
+            "calculateChange",
+            "change"
+          ],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/department/ProfileCard.jsx": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/department/ProfileCard.jsx",
+          "language": "javascript",
+          "size": 856,
+          "last_modified": 1729768093.8594024,
+          "hash": "4c35c3afa48c87428a0240f6d7f26b29",
+          "dependencies": [],
+          "exports": [
+            "ProfileCard"
+          ],
+          "doc_strings": [],
+          "functions": [
+            "ProfileCard"
+          ],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/department/DepartmentCard.jsx": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/department/DepartmentCard.jsx",
+          "language": "javascript",
+          "size": 0,
+          "last_modified": 1729768093.8595383,
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "dependencies": [],
+          "exports": [],
+          "doc_strings": [],
+          "functions": [],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/Header.jsx": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/Header.jsx",
+          "language": "javascript",
+          "size": 0,
+          "last_modified": 1729768093.8598268,
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "dependencies": [],
+          "exports": [],
+          "doc_strings": [],
+          "functions": [],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/LoadingSpinner.jsx": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/LoadingSpinner.jsx",
+          "language": "javascript",
+          "size": 585,
+          "last_modified": 1729768093.8603065,
+          "hash": "178d0e43cb2ff0b978e3815d76ee1fca",
+          "dependencies": [],
+          "exports": [
+            "LoadingSpinner",
+            "PageLoader"
+          ],
+          "doc_strings": [],
+          "functions": [
+            "LoadingSpinner",
+            "PageLoader"
+          ],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/Footer.jsx": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/Footer.jsx",
+          "language": "javascript",
+          "size": 0,
+          "last_modified": 1729768093.8610487,
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "dependencies": [],
+          "exports": [],
+          "doc_strings": [],
+          "functions": [],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/ErrorBoundary.jsx": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/ErrorBoundary.jsx",
+          "language": "javascript",
+          "size": 2161,
+          "last_modified": 1729768093.8613446,
+          "hash": "23290b39b3ee0fb4915b6caef3eb0d83",
+          "dependencies": [],
+          "exports": [
+            "ErrorBoundary"
+          ],
+          "doc_strings": [],
+          "functions": [],
+          "classes": [
+            "ErrorBoundary"
+          ]
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/Navigation.jsx": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/Navigation.jsx",
+          "language": "javascript",
+          "size": 0,
+          "last_modified": 1729768093.8614352,
+          "hash": "d41d8cd98f00b204e9800998ecf8427e",
+          "dependencies": [],
+          "exports": [],
+          "doc_strings": [],
+          "functions": [],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/__tests__/LoadingSpinner.test.jsx": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/components/common/__tests__/LoadingSpinner.test.jsx",
+          "language": "javascript",
+          "size": 1081,
+          "last_modified": 1729768093.862113,
+          "hash": "aed3b1920203188a9d4c7f922f82ec07",
+          "dependencies": [],
+          "exports": [],
+          "doc_strings": [],
+          "functions": [],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/pages/Register.jsx": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/pages/Register.jsx",
+          "language": "javascript",
+          "size": 9397,
+          "last_modified": 1729768093.8677094,
+          "hash": "4d4a12830711e4815e9917503b4891a7",
+          "dependencies": [],
+          "exports": [
+            "Register"
+          ],
+          "doc_strings": [],
+          "functions": [
+            "Register",
+            "handleInputChange",
+            "validateStep",
+            "handleNext",
+            "handleBack"
+          ],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/pages/Home.jsx": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/pages/Home.jsx",
+          "language": "javascript",
+          "size": 3037,
+          "last_modified": 1729768093.868055,
+          "hash": "1e1ff8eac644fe0b72fbda8b4cd2da05",
+          "dependencies": [],
+          "exports": [
+            "Home"
+          ],
+          "doc_strings": [],
+          "functions": [
+            "Home"
+          ],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/pages/department/Profile.jsx": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/pages/department/Profile.jsx",
+          "language": "javascript",
+          "size": 1168,
+          "last_modified": 1729768093.8666973,
+          "hash": "f3ef3a4b834766f53a502d50b894ea7e",
+          "dependencies": [],
+          "exports": [
+            "Profile"
+          ],
+          "doc_strings": [],
+          "functions": [
+            "Profile"
+          ],
+          "classes": []
+        },
+        "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/pages/department/DepartmentHome.jsx": {
+          "path": "/Users/Giovanni/@JIT_fact-checking_extension/minimal_PoC_Versions/youtube-annotation-backend/youtube-landing/datamatchhub/src/pages/department/DepartmentHome.jsx",
+          "language": "javascript",
+          "size": 1619,
+          "last_modified": 1729768093.8671803,
+          "hash": "dd58256a15e6604976c48bcdf89bcfb0",
+          "dependencies": [],
+          "exports": [
+            "DepartmentHome"
+          ],
+          "doc_strings": [],
+          "functions": [
+            "DepartmentHome"
+          ],
+          "classes": []
+        }
+      },
+      "changes": {}
+    }
+  ]
+}
