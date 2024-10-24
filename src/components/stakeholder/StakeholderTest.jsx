@@ -1,71 +1,66 @@
-import React, { useState, useEffect } from 'react';
-import { stakeholderTypes, getStakeholderData, getAllStakeholders } from '../../data/stakeholders';
-import { updateStakeholder } from '../../utils/stakeholderUtils';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { useState } from 'react';
+import { ChevronDown, ChevronRight } from 'lucide-react';
+import Section from './components/Section';
+import MinimalTest from './pages/MinimalTest';
+import StakeholderTest from './components/stakeholder/StakeholderTest';
 
-const StakeholderTest = () => {
-  const [stakeholders, setStakeholders] = useState([]);
-  const [message, setMessage] = useState('');
-
-  useEffect(() => {
-    // Load all stakeholders on component mount
-    setStakeholders(getAllStakeholders());
-  }, []);
-
-  const handleAddFeature = async (type) => {
-    try {
-      const newFeature = {
-        id: `new-feature-${Date.now()}`,
-        title: "Test New Feature",
-        description: "This is a test feature"
-      };
-
-      const stakeholderData = getStakeholderData(type);
-      stakeholderData.features.push(newFeature);
-
-      const result = await updateStakeholder(type, stakeholderData);
-      setMessage(`Updated successfully: ${result.message}`);
-      
-      // Refresh stakeholders
-      setStakeholders(getAllStakeholders());
-    } catch (error) {
-      setMessage(`Error: ${error.message}`);
-    }
-  };
-
-  return (
-    <div className="p-4">
-      <h2 className="text-xl font-bold mb-4">Stakeholder Test Panel</h2>
-      
-      {message && (
-        <div className="mb-4 p-2 bg-blue-100 text-blue-800 rounded">
-          {message}
-        </div>
-      )}
-
-      {stakeholders.map((stakeholder, index) => (
-        <div key={index} className="mb-4 p-4 border rounded">
-          <h3 className="font-bold">{stakeholder.title}</h3>
-          <button
-            onClick={() => handleAddFeature(Object.keys(stakeholderTypes)[index])}
-            className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-          >
-            Add Test Feature
-          </button>
-          
-          <div className="mt-2">
-            <h4 className="font-semibold">Features:</h4>
-            <ul className="list-disc pl-4">
-              {stakeholder.features.map((feature) => (
-                <li key={feature.id}>
-                  {feature.title} - {feature.description}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      ))}
+function App() {
+  // Landing page content as a separate component
+  const LandingContent = () => (
+    <div className="max-w-6xl mx-auto p-8">
+      <header className="text-center mb-12">
+        <h1 className="text-4xl font-bold mb-4">YouTube Annotation Extension</h1>
+        <p className="text-xl text-gray-600">JIT Fact-Checking Solution</p>
+      </header>
+      <Section title="Value Propositions" level={1}>
+        <Section title="For Content Consumers" level={2}>
+          <ul className="list-disc pl-4">
+            <li>Real-time fact verification while watching</li>
+            <li>Enhanced information accuracy</li>
+            <li>Community-driven truth validation</li>
+          </ul>
+        </Section>
+        
+        <Section title="For Content Creators" level={2}>
+          <ul className="list-disc pl-4">
+            <li>Increased content credibility</li>
+            <li>Automated fact-checking assistance</li>
+            <li>Improved viewer trust</li>
+          </ul>
+        </Section>
+        <Section title="For Moderators" level={2}>
+          <ul className="list-disc pl-4">
+            <li>Streamlined verification process</li>
+            <li>AI-assisted moderation tools</li>
+            <li>Collaborative fact-checking platform</li>
+          </ul>
+        </Section>
+      </Section>
     </div>
   );
-};
 
-export default StakeholderTest;
+  return (
+    <BrowserRouter>
+      <div>
+        <nav className="bg-gray-800 text-white p-4">
+          <div className="max-w-6xl mx-auto flex justify-between items-center">
+            <div className="flex gap-4">
+              <Link to="/" className="hover:text-blue-300">Home</Link>
+              <Link to="/minimal" className="hover:text-blue-300">Minimal Test</Link>
+              <Link to="/stakeholders" className="hover:text-blue-300">Stakeholder Manager</Link>
+            </div>
+          </div>
+        </nav>
+
+        <Routes>
+          <Route path="/minimal" element={<MinimalTest />} />
+          <Route path="/stakeholders" element={<StakeholderTest />} />
+          <Route path="/" element={<LandingContent />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
+  );
+}
+
+export default App;

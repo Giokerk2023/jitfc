@@ -1,3 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+# Preserve existing role-based routing
 [[redirects]]
   from = "/role/*"
   to = "/:splat"
@@ -18,6 +24,13 @@
   to = "/:splat"
   status = 200
 
+# Development settings
+[dev]
+  command = "npm run dev"
+  port = 3000
+  publish = "dist"
+
+# This should be the last redirect rule
 [[redirects]]
   from = "/*"
   to = "/index.html"

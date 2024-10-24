@@ -1,12 +1,29 @@
 import React from 'react';
 
-const MinimalTest = () => {
+const SimpleTest = () => {
   return (
-    <div style={{ padding: '20px', backgroundColor: 'yellow' }}>
-      <h1>THIS IS A MINIMAL TEST PAGE</h1>
-      <p>If you can see this yellow background, routing is working!</p>
+    <div style={{ 
+      margin: '20px',
+      padding: '20px',
+      backgroundColor: 'red',  // Very distinct color
+      color: 'white',
+      borderRadius: '8px'
+    }}>
+      <h1 style={{ fontSize: '24px', marginBottom: '20px' }}>
+        DEBUG: Simple Test Page
+      </h1>
+      <div style={{
+        padding: '10px',
+        backgroundColor: 'blue',
+        display: 'inline-block',
+        borderRadius: '4px'
+      }}>
+        <button onClick={() => alert('DEBUG: Button clicked from SimpleTest component')}>
+          DEBUG TEST BUTTON
+        </button>
+      </div>
     </div>
   );
 };
 
-export default MinimalTest;
+export default SimpleTest;
