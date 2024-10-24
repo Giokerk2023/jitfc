@@ -1,6 +1,6 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
 import { ChevronDown, ChevronRight } from 'lucide-react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Section from './components/Section';
 import Home from './pages/Home';
@@ -11,7 +11,6 @@ import MainLayout from './components/layout/MainLayout';
 import StakeholderTest from './components/stakeholder/StakeholderTest';
 
 function App() {
-  // Preserve the original landing page content in the Home component
   const LandingContent = () => (
     <div className="max-w-6xl mx-auto p-8">
       <header className="text-center mb-12">
@@ -49,7 +48,6 @@ function App() {
     <Router>
       <MainLayout>
         <Routes>
-          {/* Use the original landing content for the home route */}
           <Route path="/" element={<LandingContent />} />
           <Route path="/register" element={<Register />} />
           <Route path="/department" element={<DepartmentHome />} />
